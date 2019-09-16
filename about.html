@@ -1,1 +1,69 @@
+git tag ver-1.0
+
+git tag
+
+
+
+
+
+
+
+
+
+
+git tag -a ver-1.1 -m "Msg for new tag and new ver"
+
+git show ver-1.1
+OR
+git tag -l "ver-*.*"     -- To view all tags wild card
+
+
+
+
+
+
+
+
+
+git push origin ver-1.0  -- push to remote
+
+git push --tags          -- push all tags on remote
+
+
+
+
+
+
+git tag -d ver-1.1        -- to delete tag version
+or --delete
+
+git push origin -d ver-1.1   -- deleting from remote
+OR
+git push origin -d ver-1.0 ver-1.1   -- del multiple
+
+git log
+
+
+
+
+-- Working with desired tag
+git checkout -b <branchName> <tagName>
+
+
+
+git tag <tagName> <checkSome of Commit>
+
+git tag ver-1.1 5b02dgR.... (40 digit checkSum) 
+
+
+
 git checkout master
+
+git merge myBranch
+
+git push -u origin master
+
+git branch -D myBranch
+
+git push origin --delete myBranch
+
